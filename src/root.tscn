@@ -1,3 +1,70 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Blue.png" type="Texture" id=1]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://block/block.tscn" type="PackedScene" id=3]
 
 [node name="root" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1000, 1000 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+
+[node name="all_blocks" type="Node2D" parent="."]
+
+[node name="block" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -24, 24 )
+
+[node name="block2" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 24, 24 )
+
+[node name="block3" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 72, 24 )
+
+[node name="block4" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 120, 24 )
+
+[node name="block5" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 168, 24 )
+
+[node name="block7" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 288, -8 )
+
+[node name="block8" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 392, -8 )
+
+[node name="block10" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 456, -56 )
+
+[node name="block9" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 336, -112 )
+
+[node name="block11" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 248, -168 )
+
+[node name="block12" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( 112, -216 )
+
+[node name="block13" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -64, -256 )
+
+[node name="block14" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -112, -256 )
+
+[node name="block15" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -160, -256 )
+
+[node name="block16" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -208, -256 )
+
+[node name="block6" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -72, 24 )
+
+[node name="block18" parent="all_blocks" instance=ExtResource( 3 )]
+position = Vector2( -145, 3 )
