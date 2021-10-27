@@ -20,7 +20,6 @@ func get_input():
 
 	if is_on_floor() and up:
 		vel.y = -JUMP_SPEED
-		print("hi")
 	if right:
 		vel.x = RUN_SPEED
 	if left:
